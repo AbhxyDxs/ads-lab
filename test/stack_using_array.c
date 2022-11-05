@@ -6,13 +6,13 @@ void display(void);
 int main()
 {
  top=-1;
- printf("\n Enter the size of Stack (Max-20) : ");
+ printf("\nEnter the size of Stack (Max-20) : ");
  scanf("%d",&n);
  printf("\nStack Operations");
  printf("\n1.Push\n2.Pop\n3.Display\n4.Quit");
  do
  {
-  printf("\n Enter the Selection : ");
+  printf("\nEnter the Selection : ");
   scanf("%d",&slctn);
   switch(slctn)
   {
@@ -55,7 +55,7 @@ void push()
  }
  else
  {
-  printf(" Enter an item to be Pushed:");
+  printf("Enter an item to be Pushed:");
   scanf("%d",&x);
   top++;
   stack[top]=x;
@@ -81,14 +81,14 @@ void display()
 {
  if(top>=0)
  {
-  printf("\n The elements in STACK \n");
+  printf("\nThe elements in STACK \n");
   for(i=top; i>=0; i--)
   printf("\n%d",stack[i]);
-  printf("\n Press Next Choice");
+  printf("\nPress Next Choice");
  }
  else
  {
-  printf("\n The STACK is empty!");
+  printf("\nThe STACK is empty!");
  }
 }
 

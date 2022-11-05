@@ -12,7 +12,7 @@ int main()
  printf("\n1.Insertion\n2.Deletion\n3.Display\n4.Quit");
  do
  {
-  printf("\n Enter the Selection : ");
+  printf("\nEnter the Selection : ");
   scanf("%d",&slctn);
   switch(slctn)
   {
@@ -59,7 +59,7 @@ void insert()
   {
    front=0;
   }
-  printf(" Enter an item to be inserted:");
+  printf("Enter an item to be inserted:");
   scanf("%d",&x);
   rear=rear+1;
   queue[rear]=x;
@@ -76,7 +76,7 @@ void delete()
  else
  {
   printf("\n%d Deleted!",queue[front]);
-  front=front-1;
+  front=front+1;
  }
 }
 
@@ -85,14 +85,16 @@ void display()
 {
  if(front==-1)
  {
-  printf("\n The Queue is empty!");
+  printf("\nThe Queue is empty!");
  }
  else
  {
-  printf("\n The elements in Queue \n");
+  printf("\nThe elements in Queue \n");
   for(i=front; i<=rear; i++)
-  printf("%d ",queue[i]);
-  printf("\n Press Next Choice");
+  {
+   printf("%d ",queue[i]);
+  }
+  printf("\nPress Next Choice");
  } 
 }
 
